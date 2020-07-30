@@ -7,8 +7,8 @@ var postManager = function () {
   var list = document.createElement("ul");
   container.appendChild(list);
   var listElements = this.posts.map(
-    (el) => `<li> <strong>${el.title}</strong> </br>
-    <i>${el.body}</i>
+    (el) => `<li> <strong> ${el.userId} ${el.title}</strong> </br>
+    ${el.body}
     </li>`
   );
   list.innerHTML = listElements;
